@@ -1,0 +1,85 @@
+.cardDahboard {
+    background: var(--bs-warning-bg-subtle); 
+    border-radius: 8px;
+    width: 90vw; 
+    max-width: 1200px;
+    display: flex; 
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.cardDahboard-header {
+    padding: 1rem;
+    background-color: var(--bs-light);
+}
+
+.cardDahboard-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--bs-emphasis-color);
+}
+
+.cardDahboard-subtitle {
+    color: #6c757d; 
+}
+
+
+.MainDash .container-fluid {
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .cardDahboard {
+        width: 95vw; /* Augmenter la largeur relative pour les petits écrans */
+    }
+
+    .cardDahboard-body {
+        flex-direction: column; /* Passer en colonne pour les petits écrans */
+    }
+
+    .cardDahboard-body .row {
+        flex-direction: column; /* Passer en colonne pour les petits écrans */
+    }
+
+    .cardDahboard-body .col-6 {
+        width: 100%; /* Utiliser toute la largeur disponible */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .illustration-img {
+        width: 80%; /* Réduire la taille de l'image */
+        margin: 0 auto; /* Centrer l'image */
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Réduire la taille du titre */
+    }
+
+    p {
+        font-size: 0.9rem; /* Réduire la taille du texte */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cardDahboard {
+        width: 100%; /* Utiliser toute la largeur disponible */
+    }
+
+    .cardDahboard-body .col-6 {
+        padding: 10px; /* Réduire le padding */
+    }
+
+    .illustration-img {
+        width: 100%; /* Utiliser toute la largeur disponible */
+    }
+
+    h4 {
+        font-size: 1.2rem; /* Réduire davantage la taille du titre */
+    }
+
+    p {
+        font-size: 0.8rem; /* Réduire davantage la taille du texte */
+    }
+
+}

@@ -1,0 +1,165 @@
+.wrapper {
+    position: relative;
+    top: 40px;
+    width: 420px;
+    min-height: 85vh;
+    background: rgba(81, 81, 80, 0.297);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255 , .1);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: height .2s ease;
+    overflow: hidden;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+    
+}
+.wrapper .form-box.login{
+    transition: translate .18s ease;
+    translate: 0;
+
+}
+
+.wrapper.active{
+    height: 520px;
+}
+.wrapper.active .form-box.login{
+    transition: none;
+    translate: -400px;
+}
+
+.wrapper.active .form-box.register{
+    transition: translate .18s ease;
+    translate: 0;
+
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    translate: 400px;
+    transition: none;
+}
+form h1{
+    font-size: 40px;
+   font-weight: bold;
+}
+form .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+   
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255 , .1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 16px;
+}
+
+form button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+form .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+/* Media Queries pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        top: 20px; /* Réduire l'espace en haut */
+        min-height: 80vh; /* Ajuster la hauteur */
+    }
+
+    .wrapper .form-box {
+        padding: 15px; /* Réduire le padding */
+    }
+
+    form h1 {
+        font-size: 24px; /* Réduire la taille du titre */
+    }
+
+    .input-box input {
+        font-size: 12px; /* Réduire la taille de la police */
+    }
+
+    form button {
+        font-size: 14px; /* Réduire la taille de la police du bouton */
+    }
+
+    .register-link {
+        font-size: 12px; /* Réduire la taille de la police du lien */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        width: 95%; /* Augmenter la largeur relative */
+        min-height: 75vh; /* Ajuster la hauteur */
+    }
+
+    form h1 {
+        font-size: 20px; /* Réduire davantage la taille du titre */
+    }
+
+    .input-box input {
+        padding: 15px 35px 15px 15px; /* Réduire le padding */
+    }
+
+    .input-box .icon {
+        right: 15px; /* Ajuster la position de l'icône */
+    }
+
+    form button {
+        height: 40px; /* Réduire la hauteur du bouton */
+        font-size: 12px; /* Réduire la taille de la police du bouton */
+    }
+
+    .register-link {
+        font-size: 11px; /* Réduire davantage la taille de la police du lien */
+    }
+}

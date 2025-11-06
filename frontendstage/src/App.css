@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('/src/imgs/R.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: #FF919D;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #f799a354;
+}
+
+.AppGlass {
+  display: grid;
+  grid-template-columns: 11rem auto; /* Sidebar à gauche, contenu à droite */
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  width: 100vw; /* Prend toute la largeur de l'écran */
+  background: var(--glass);
+  
+  gap: 16px;
+  overflow: hidden; 
+  color: var(--black);
+  background: linear-gradient(
+      106.37deg,
+      #a7a4a0aa 29.63%,
+      #8781717e 51.55%,
+      #6f634e9a 90.85%
+  );
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+main {
+ margin: 40px 10px;
+ 
+}
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+  .AppGlass {
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AppGlass {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+

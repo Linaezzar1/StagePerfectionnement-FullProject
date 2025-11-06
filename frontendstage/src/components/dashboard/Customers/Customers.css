@@ -1,0 +1,47 @@
+.developers-list {
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .developers-list table {
+    width: 100%;
+    border-collapse: separate; /* Permet d'appliquer le border-radius */
+    border-spacing: 0; /* Supprime l'espace entre les cellules */
+    background-color: #ddd;
+    border-radius: 8px; /* Applique le border-radius sur le tableau */
+    overflow: hidden;
+  }
+  
+  .developers-list th, .developers-list td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #c3bdbd;
+  }
+
+  .developers-list th{
+    border: none;
+  }
+  
+  .developers-list th {
+    background-color: #fcfcf7;
+  }
+  .deleteBtn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(197, 27, 27, 0.893);
+    color: #fcfcf7;
+  }
+
+  .deleteBtn:hover{
+    background-color: rgba(146, 35, 35, 0.893) ;
+  }
+
+  .updateBtn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(36, 44, 116, 0.893);
+    color: #fcfcf7;
+  }

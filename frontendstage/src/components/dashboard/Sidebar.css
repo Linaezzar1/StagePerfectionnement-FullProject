@@ -1,0 +1,128 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 2rem;
+    transition: all 300ms ease;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 11rem;
+    z-index: 1000;
+}
+
+.logo{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
+
+.logo img{
+    width: 3rem;
+    height: 3rem;
+}
+.logo span span{
+    color: rgb(220, 200, 73) ;
+}
+
+/* menu */
+.menu{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    border-radius: 0.7rem;
+    font-size: 14px;
+  }
+
+  .menuItem:hover {
+    cursor: pointer;
+  }
+  .menu .menuItem:last-child {
+    position: absolute;
+    bottom: 2.3rem;
+    width: 100%;
+  }
+  .Sidebar .active {
+    background:rgba(223, 203, 73, 0.536) ;
+    margin-left: 0;
+  }
+  .Sidebar .active::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background: rgb(223, 203, 73);
+    margin-right: calc(1rem - 8px);
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .Sidebar {
+        width: 8rem; /* Reduce the sidebar width on smaller screens */
+    }
+
+    .logo {
+        font-size: 18px; /* Adjust logo size */
+    }
+
+    .logo img {
+        width: 2.5rem; /* Adjust logo image size */
+        height: 2.5rem;
+    }
+
+    .menu {
+        margin-top: 3rem; /* Reduce top margin */
+    }
+
+    .menuItem {
+        font-size: 12px; /* Reduce font size */
+        margin-left: 1.5rem; /* Adjust menu item margin */
+    }
+
+    .menu .menuItem:last-child {
+        bottom: 1.5rem; /* Adjust bottom position for last item */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Sidebar {
+        width: 6rem; /* Further reduce sidebar width on very small screens */
+    }
+
+    .logo {
+        font-size: 16px; /* Adjust logo size */
+    }
+
+    .logo img {
+        width: 2rem; /* Adjust logo image size */
+        height: 2rem;
+    }
+
+    .menu {
+        margin-top: 2.5rem; /* Adjust top margin */
+    }
+
+    .menuItem {
+        font-size: 10px; /* Further reduce font size */
+        margin-left: 1rem; /* Adjust menu item margin */
+    }
+
+    .menu .menuItem:last-child {
+        bottom: 1.2rem; /* Adjust bottom position for last item */
+    }
+}
+  

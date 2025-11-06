@@ -1,0 +1,119 @@
+.UserFiles {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    margin-top: 60px;
+    min-height: 70vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.Search-bar-User {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Search-bar-User input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.Search-bar-User input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.UserFiles-list {
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    background-color: #dddddd4b;
+    border-radius: 10px;
+    padding: 10px;
+    /* Limite la hauteur de la liste */
+    overflow-y: auto;
+    /* Active le défilement vertical */
+    scrollbar-width: thin;
+}
+
+.UserFile-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.UserFile-item:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    /* Effet de survol */
+}
+
+.iconContainer {
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+   
+}
+
+.iconContainer:hover {
+    color: rgb(36, 29, 116);
+}
+
+.btnSave{
+    font-size: 30px;
+}
+
+.btnSave:hover{
+    color: rgb(45, 44, 44);
+}
+
+@media screen and (max-width: 768px) {
+    .UserFiles {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .UserFile-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .file-actions {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .btnEdit, .btnDelete {
+        width: 45%;
+    }
+
+    .iconContainer {
+        justify-content: center;
+    }
+}

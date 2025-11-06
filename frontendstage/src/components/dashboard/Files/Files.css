@@ -1,0 +1,117 @@
+.files-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.files-page h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.files-page p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #ddd;
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 500px;
+  /* Limite la hauteur de la liste */
+  overflow-y: auto;
+  /* Active le défilement vertical */
+  scrollbar-width: thin;
+}
+
+.file-item {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px;
+
+}
+
+.file-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.file-details {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+}
+
+.files {
+  margin-top: 50px;
+}
+
+.file-actions {
+  margin-top: 10px;
+}
+
+.file-actions button {
+  margin-right: 10px;
+  
+  border: none;
+  cursor: pointer;
+}
+
+.file-actions button:hover {
+  opacity: 0.8;
+}
+
+.files-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.files-list::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+.files-list::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.files-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.btnDelete{
+  padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(197, 27, 27, 0.893);
+    color: #fcfcf7;
+}
+
+.btnDelete:hover{
+  background-color: rgba(118, 17, 17, 0.893) ;
+}
+
+.btnEdit{
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(205, 169, 60);
+    color: #fcfcf7;
+    padding: 5px 15px;
+}
